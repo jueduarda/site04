@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comidas | Mega Arraiá SESI-SENAI</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsividade.css" />
+</head>
+<body>
+
+  <header class="cabecalho-brincadeiras">
+    <section class="container-header-brincadeiras">
+      <article class="logo-brincadeiras">
+        <a href="index.html"><img src="fa6e1de0-005a-11ec-9c76-59037194a6de_1630771003936_128.png" alt="Logo SESI" /></a>
+      </article>
+      <nav class="menu-brincadeiras">
+        <a href="index.html">Início</a>
+        <a href="comidas.html" class="ativo">Comidas</a>
+        <a href="brincadeiras.html">Brincadeiras</a>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="texto">
+      <h1>Delícias do Arraiá</h1>
+      <p>Sinta o sabor da tradição junina com nossas comidas típicas!</p>
+    </section>
+
+    <section class="cards-links">
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="image.png" alt="Pipoca" loading="lazy" />
+        <h2>Pipoca</h2>
+        <p class="descricao">Milho estourado no ponto, a cara do arraiá!</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="image (1).png" alt="Chocolate Quente" loading="lazy" />
+        <h2>Chocolate Quente</h2>
+        <p class="descricao">Bebida cremosa e doce pra aquecer o coração.</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="image (2).png" alt="Paçoca" loading="lazy" />
+        <h2>Paçoca</h2>
+        <p class="descricao">Doce típico de amendoim, perfeito pra festa junina!</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="image (3).png" alt="Bolo de Fubá" loading="lazy" />
+        <h2>Bolo de Fubá</h2>
+        <p class="descricao">Tradicional, fofinho e irresistível com café!  </p>
+      </article>
+    </section>
+  </main>
+ <br>
+ <br> 
+ <br>
+ <br>
+  <footer class="rodape">
+    <span>&copy; 2025 Mega Arraiá SESI | Todos os direitos reservados</span>
+  </footer>
+  
+  <script>
+    function toggleDescricao(card) {
+      card.classList.toggle('mostrar-descricao');
+    }
+  </script>
+
+</body>
+</html>

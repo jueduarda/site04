@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brincadeiras | Mega Arraiá SESI-SENAI</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsividade.css" />
+</head>
+<body>
+
+  <header class="cabecalho-brincadeiras">
+    <section class="container-header-brincadeiras">
+      <article class="logo-brincadeiras">
+        <a href="index.html"><img src="fa6e1de0-005a-11ec-9c76-59037194a6de_1630771003936_128.png" alt="Logo SESI" /></a>
+      </article>
+      <nav class="menu-brincadeiras">
+        <a href="index.html">Início</a>
+        <a href="comidas.html">Comidas</a>
+        <a href="brincadeiras.html" class="ativo">Brincadeiras</a>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="texto">
+      <h1>Brincadeiras do Arraiá</h1>
+      <p>Diversão garantida com as tradicionais atrações juninas!</p>
+    </section>
+
+    <section class="cards-links">
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="boca do palhaço.png" alt="Boca do Palhaço" loading="lazy" />
+        <h2>Boca do Palhaço</h2>
+        <p class="descricao">Acertar a bola na boca do palhaço é só pra quem mira bem!</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="tomba lata.png" alt="Tomba Lata" loading="lazy" />
+        <h2>Tomba Lata</h2>
+        <p class="descricao">Derrube todas as latas e ganhe prêmios juninos!</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="pescaria.png" alt="Pescaria" loading="lazy" />
+        <h2>Pescaria</h2>
+        <p class="descricao">Pesque o peixinho e descubra sua surpresa!</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="correio elegante.png" alt="Correio Elegante" loading="lazy" />
+        <h2>Correio Elegante</h2>
+        <p class="descricao">Mande uma mensagem divertida, carinhosa ou misteriosa para alguém especial! Nosso Correio Elegante espalha alegria, risos e aquele clima de festa no ar! 💌
+
+</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="argola.png" alt="Argola" loading="lazy" />
+        <h2>Argola</h2>
+        <p class="descricao">Acerte a argola e leve um prêmio pra casa!</p>
+      </article>
+
+      <article class="card" onclick="toggleDescricao(this)">
+        <img src="cadeia.png" alt="Prisão" loading="lazy" />
+        <h2>Prisão</h2>
+        <p class="descricao">Foi preso no arraiá? Só sai com fiança divertida!</p>
+      </article>
+    </section>
+  </main>
+  <br>
+  <br>
+
+  <footer class="rodape">
+    <span>&copy; 2025 Mega Arraiá SESI | Todos os direitos reservados</span>
+  </footer>
+
+  <script>
+    function toggleDescricao(card) {
+      card.classList.toggle('mostrar-descricao');
+    }
+  </script>
+
+</body>
+</html>
